@@ -1,0 +1,85 @@
+body{
+    background: #000;
+    color: #fff;
+}
+.input_custom{
+    border: 1px solid #000000; /* Adiciona uma borda cinza */
+    border-radius: 0.50rem; /* Borda arredondada */
+    padding: 0.5rem; /* Adiciona um preenchimento interno */
+    background: #000;
+    color: white; /* Cor do texto digitado */
+
+}
+.input_custom:focus{
+    border-color: #80bdff; /* Altera a cor da borda quando o input está focado */
+    outline: none; /* Remove o contorno padrão ao focar */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Adiciona um leve efeito de sombra */
+    background: #2e2e2e;
+    color: white;
+}
+
+.custom_form{
+    height: 400px; /* Defina a altura desejada aqui */
+    width: 300px;
+}
+.btn_custom{
+    width: 200px;
+}
+.btn_custom:hover{
+    background: rgb(13, 82, 50);
+}
+::placeholder{
+    color: #fff !important;
+}
+
+body.light-mode {
+    background: #fff;
+    color: #000;
+}
+
+body.light-mode .input_custom {
+    border-color: #000000;
+    background: #ffffff;
+    color: #000;
+}
+
+body.light-mode .input_custom:focus {
+    border-color: #80bdff;
+    background: #f0f0f0;
+    color: #000;
+}
+body.light-mode ::placeholder{
+    color: #000 !important; 
+}
+
+
+.theme-toggle {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-65%);
+    text-align: center;
+    z-index: 10;
+    right: 0;
+    left: auto;
+    border: none;
+    background-color: var(--bs-body-color);
+  }
+  
+  html[data-bs-theme='dark'] .theme-toggle .fa-sun,
+  html[data-bs-theme='light'] .theme-toggle .fa-moon {
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+    font-size: 1.25rem;
+    color: #fff;
+  }
+  
+  html[data-bs-theme='dark'] .theme-toggle .fa-moon {
+    display: none;
+  }
+  
+  html[data-bs-theme='light'] .theme-toggle .fa-sun {
+    display: none;
+  }
+  
+
